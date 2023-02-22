@@ -37,6 +37,7 @@ jobs:
       - name: Build the Docker image
         run: |
           IMAGE_TAG=${{ steps.extract_branch.outputs.branch }}
+          echo ${{ github.ref_name }}
           echo $IMAGE_NAME:$IMAGE_TAG
         
       - run: echo "🍏 This job's status is ${{ job.status }}."
