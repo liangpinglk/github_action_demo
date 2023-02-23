@@ -1,9 +1,11 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
-  push:
-    branches:
-      - master
+  # push:
+  #   branches:
+  #     - master
+  # 手动出发事件
+  workflow_dispatch:
 env:
     FIRST: my first env
     IMAGE_NAME: test/test
