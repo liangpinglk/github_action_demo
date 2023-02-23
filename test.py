@@ -8,6 +8,7 @@ def print_memory_info(name):
     """
     pid = os.getpid()
     p = psutil.Process(pid)
+    a # pylint: disable=C,R,W,E,F
 
     info = p.memory_full_info()
     mb = 1024 * 1024
