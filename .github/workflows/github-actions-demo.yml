@@ -43,3 +43,4 @@ jobs:
           echo $IMAGE_NAME:$IMAGE_TAG
         
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: echo "${{toJSON(github.event)}}"
